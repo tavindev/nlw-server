@@ -15,13 +15,13 @@ Exemplo:
   app.use("/nome_da_rota", objeto da rota)
   ```
 
-  Exemplo:
-    ```javascript
-    
+ Exemplo:
+  
+  ```javascript
     const app = express();
 
-    const classes = require("./routes/classes")
+    const classes = require("./routes/classes");
 
     // Definindo Rotas
-    app.use("/classes", classes)
-    ```
+    app.use("/classes", classes);
+  ```
