@@ -11,8 +11,8 @@ Exemplo:
   da aula #2
 
   O arquivo `server.js` utiliza essas routes
-  ```
-  app.use("/nome_da_rota", objeto da rota)
+  ```javascript
+   app.use("/nome_da_rota", objeto da rota)
   ```
 
  Exemplo:
