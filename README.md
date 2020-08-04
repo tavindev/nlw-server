@@ -16,7 +16,7 @@ Exemplo:
   ```
 
  Exemplo:
-  
+  **server.ts**
   ```javascript
     const app = express();
 
@@ -24,4 +24,29 @@ Exemplo:
 
     // Definindo Rotas
     app.use("/classes", classes);
+  ```
+  
+  **classes.ts**
+  ```javascript
+import express from "express"
+import db from "../database/connection"
+import hour_to_seconds from '../utils/hour_to_seconds'
+
+const router = express.Router()
+
+interface ScheduleItem {
+  week_day: number,
+  from: string,
+  to: string
+}
+
+router.get("/", async (req, res, next) => {
+  // CLASSES GET METHOD CODE
+})
+
+router.post("/", async (req, res, next) => {
+  // CLASS POST METHOD CODE
+})
+
+module.exports = router
   ```
